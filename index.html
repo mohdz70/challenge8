@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau</title>
+    <script>
+      function comparer() {
+        var Tbl1 = [1, 25, 23];
+        var Tbl2 = [1, 23, 1];
+        var Tbl3 = [];
+        var k = 0;
+        for (var i = 0; i < Tbl1.length; i++) {
+          for (var j = 0; j < Tbl2.length; j++) {
+            if (Tbl2[j] === Tbl1[i]) {
+              Tbl3[k] = [Tbl2[j]];
+              k++;
+            }
+          }
+        }
+
+        for (var val1 of Tbl3) {
+          console.log(val1);
+        }
+      }
+
+      comparer();
+    </script>
+  </head>
+  <body></body>
+</html>
